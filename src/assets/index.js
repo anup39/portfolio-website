@@ -30,6 +30,18 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
+import resimator_icon from "./company/resimator_icon.png";
+import openlayers from "./tech/openlayers.png";
+import arcgis from "./tech/arcgis.png";
+import django from "./tech/django.png";
+import mapbox from "./tech/mapbox.png";
+import geoserver from "./tech/geoserver.png";
+import google_maps from "./tech/googlemaps.png";
+import pccmis from "./tech/pccmis.png";
+import driftsense from "./tech/driftsense.png";
+import Bugmapper from "./tech/Bugmapper.png";
+import naxamapper from "./tech/naxamapper.png";
+
 export {
   logo,
   backend,
@@ -59,4 +71,15 @@ export {
   carrent,
   jobit,
   tripguide,
+  resimator_icon,
+  openlayers,
+  arcgis,
+  django,
+  mapbox,
+  geoserver,
+  google_maps,
+  pccmis,
+  driftsense,
+  Bugmapper,
+  naxamapper,
 };
