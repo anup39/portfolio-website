@@ -22,6 +22,8 @@ import {
   driftsense,
   Bugmapper,
   naxamapper,
+  inovasiagriplot,
+  b3d,
 } from "../assets";
 
 export const navLinks = [
@@ -49,7 +51,7 @@ const services = [
     icon: backend,
   },
   {
-    title: "React Native Mobile Developer ",
+    title: "Data Visualization",
     icon: mobile,
   },
 ];
@@ -140,7 +142,7 @@ const experiences = [
   {
     title: "Freelanche GIS Developer",
     company_name: "iGreen Developments",
-    icon: "https://media.licdn.com/dms/image/C4D0BAQHtRdS-INyu0w/company-logo_200_200/0/1607415013187?e=1689206400&v=beta&t=2nFbE4Ati95iz2eW0UDoowxSWWROswPMyt8-zZgWtBA",
+    icon: "https://igreen-group.com/wp-content/uploads/2021/10/iGreenFinal2OctWord.png",
     iconBg: "#383E56",
     date: "April 2021 - Jan 2023",
     points: [
@@ -154,9 +156,22 @@ const experiences = [
     company_name: "BugMapper",
     icon: "https://www.incimages.com/uploaded_files/image/1920x1080/getty_468984254_67380.jpg",
     iconBg: "#E6DEDD",
-    date: "Feb 2023 - Present",
+    date: "Feb 2023 - May 2023",
     points: [
       "Develop the MVP product for BugMapper. Bugmapper is used to keep track of the activities on Greehouse",
+      "Implemented Major map frontend and backend components",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Implementing high end restful apis, data base diagrams.",
+    ],
+  },
+  {
+    title: "Senior Software Engineer",
+    company_name: "B3D Aps",
+    icon: "https://b3d.dk/wp-content/uploads/2023/10/b3dlogos-vektor-17.svg",
+    iconBg: "#E6DEDD",
+    date: "May 2023 - Present",
+    points: [
+      "Developed a cloud drone image processing software for 2d and 3d visualization",
       "Implemented Major map frontend and backend components",
       "Participating in code reviews and providing constructive feedback to other developers.",
       "Implementing high end restful apis, data base diagrams.",
@@ -190,6 +205,11 @@ const testimonials = [
       "If you're looking for Data/GIS work or mapping, web-apps etc, look no further than Anup. He is INCREDIBLY talented and skilled in this area. The project was completed on-time, with more features than initially expected. He went above and beyond to satisfy our needs and exceeded our expectations in this project. I highly recommend him to anyone looking for this type of work.",
     name: "Baron Alloway",
     company: "ReaLawState Realty Brokerage Ltd",
+  },
+  {
+    testimonial: "Well done for Job Completion of inovasi agriplot",
+    name: "Sakti Anggara",
+    company: "Earthqualizer and Inovasi Digital",
   },
 ];
 
@@ -261,9 +281,9 @@ const projects = [
     source_code_link: "https://qa.drift-sense.com",
   },
   {
-    name: "Bugmapper",
+    name: "Inovasi Agriplot",
     description:
-      "A complete agriculture application to track green house activites like pest, bug ,chemical spraying, drone spraying and to increase the productivity. It helps farmers to reduce their hetic time on killing bugs and pets manually",
+      "A complete commodity mapping software for coffee ,palm oil in the asian and europen . I worked as a full stack developer to develop the software . The most challenging part was to implement the 2d map using maplibre and postgis since the data was in millions",
     tags: [
       {
         name: "react",
@@ -274,7 +294,7 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "google-maps",
+        name: "maplibre",
         color: "pink-text-gradient",
       },
       {
@@ -286,13 +306,13 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: Bugmapper,
-    source_code_link: "http://map.mon-agri.org/#/locations",
+    image: inovasiagriplot,
+    source_code_link: "https://agriplot.earth/",
   },
   {
-    name: "Naxamapper",
+    name: "B3D Aps portal",
     description:
-      "Naxamapper is the online map software to build the world class digital map for free. It has functionality to add shapefile and other vector data , style them , run some of the geoprocessing tool, print and share the map ",
+      "A complete cloud portal to manage , process, digitize the drone data . It helps to create 3d models, orthophotos, point cloud, DSM, DTM, contour lines, volume calculation, and many more. 3D visualization of the data is done using deckgl",
     tags: [
       {
         name: "react",
@@ -303,7 +323,7 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "openlayers",
+        name: "maplibre",
         color: "pink-text-gradient",
       },
       {
@@ -318,13 +338,9 @@ const projects = [
         name: "open-street-map",
         color: "pink-text-gradient",
       },
-      {
-        name: "kobo-toolkit",
-        color: "pink-text-gradient",
-      },
     ],
-    image: naxamapper,
-    source_code_link: "https://naxamapper.com/#/",
+    image: b3d,
+    source_code_link: "https://b3d.dk/",
   },
 ];
 

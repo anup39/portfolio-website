@@ -1,4 +1,5 @@
 import logo from "./logo.png";
+import profile from "./profile.jpg";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -41,9 +42,12 @@ import pccmis from "./tech/pccmis.png";
 import driftsense from "./tech/driftsense.png";
 import Bugmapper from "./tech/Bugmapper.png";
 import naxamapper from "./tech/naxamapper.png";
+import inovasiagriplot from "./tech/inovasiagriplot.png";
+import b3d from "./tech/b3d.png";
 
 export {
   logo,
+  profile,
   backend,
   creator,
   mobile,
@@ -82,4 +86,6 @@ export {
   driftsense,
   Bugmapper,
   naxamapper,
+  inovasiagriplot,
+  b3d,
 };

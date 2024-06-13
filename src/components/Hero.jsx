@@ -22,8 +22,8 @@ const Hero = () => {
             Hi, I'm <span className="text-[#915EFF]"> Anup </span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop Web and Mobile <br className="sm:block hidden" />
-            interfaces and applications specialize in GIS SAAS products
+            I develop Web <br className="sm:block hidden" />
+            applications specialize in GIS SAAS products and services.
           </p>
         </div>
       </div>
