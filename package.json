@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://github.com/anup39/portfolio-website.git",
+  "homepage": "https://anup39.github.io/portfolio-website/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
