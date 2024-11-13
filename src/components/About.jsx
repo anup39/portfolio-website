@@ -47,7 +47,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        I have 7 years of experience in building web and mobile applications in
+        I have 6 years of experience in building web and mobile applications in
         various sectors, including real estate, agriculture, climate change,
         environmental and spatial solutions. I have a particular interest in
         open-source projects and enjoy brainstorming to find innovative

@@ -44,6 +44,11 @@ import Bugmapper from "./tech/Bugmapper.png";
 import naxamapper from "./tech/naxamapper.png";
 import inovasiagriplot from "./tech/inovasiagriplot.png";
 import b3d from "./tech/b3d.png";
+import gallimaps from "./tech/gallimaps.png";
+import rastertileserver from "./tech/rastertileserver.png";
+import titiler from "./tech/titiler.png";
+import webodm from "./tech/webodm.png";
+import kicreate from "./tech/kicreate.png";
 
 export {
   logo,
@@ -88,4 +93,9 @@ export {
   naxamapper,
   inovasiagriplot,
   b3d,
+  gallimaps,
+  rastertileserver,
+  titiler,
+  webodm,
+  kicreate,
 };

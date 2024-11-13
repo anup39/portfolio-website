@@ -24,6 +24,11 @@ import {
   naxamapper,
   inovasiagriplot,
   b3d,
+  gallimaps,
+  rastertileserver,
+  titiler,
+  webodm,
+  kicreate,
 } from "../assets";
 
 export const navLinks = [
@@ -34,10 +39,6 @@ export const navLinks = [
   {
     id: "work",
     title: "Work",
-  },
-  {
-    id: "contact",
-    title: "Contact",
   },
 ];
 
@@ -51,7 +52,7 @@ const services = [
     icon: backend,
   },
   {
-    title: "Data Visualization",
+    title: "GeoSpatial Developer",
     icon: mobile,
   },
 ];
@@ -113,68 +114,55 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Lead WebGIS Developer",
-    company_name: "Naxa",
-    icon: "https://naxa.com.np/ac468ef024692c042053c13a69625759.png",
-    iconBg: "#383E56",
-    date: "Feb 2020 - April 2022",
-    points: [
-      "As a Lead WebGIS Developer and Project Lead, I had the privilege of spearheading the development of GIS applications using both open-source and proprietary software.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-      "My role also involved implementing system architecture and ER diagrams, ensuring seamless integration of backend and frontend technologies. ",
-    ],
-  },
-  {
-    title: "Senior Python Developer",
-    company_name: "Resimator Oy",
-    icon: resimator_icon,
-    iconBg: "#E6DEDD",
-    date: "Mar 2022 - Nov 2022",
-    points: [
-      "Developing and maintaining web applications using Flask, Django and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing high end restful apis.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Freelanche GIS Developer",
-    company_name: "iGreen Developments",
-    icon: "https://igreen-group.com/wp-content/uploads/2021/10/iGreenFinal2OctWord.png",
-    iconBg: "#383E56",
-    date: "April 2021 - Jan 2023",
-    points: [
-      "I worked as a Full Stack Developer on an agricultural project named Driftsense",
-      "Specifically, I worked on the part of the project that required a combination of GIS knowledge and the latest technologies.",
-      "My responsibilities included involvement in system architecture, creating the database diagram (ER diagram), implementing a user authentication model, performing unit testing and QA, optimizing map-related functionalities, and working with both open source and proprietary technologies.",
-    ],
-  },
-  {
-    title: "Fullstack GIS Developer",
-    company_name: "BugMapper",
-    icon: "https://www.incimages.com/uploaded_files/image/1920x1080/getty_468984254_67380.jpg",
-    iconBg: "#E6DEDD",
-    date: "Feb 2023 - May 2023",
-    points: [
-      "Develop the MVP product for BugMapper. Bugmapper is used to keep track of the activities on Greehouse",
-      "Implemented Major map frontend and backend components",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-      "Implementing high end restful apis, data base diagrams.",
-    ],
-  },
-  {
-    title: "Senior Software Engineer",
+    title: "Senior Software Engineer (GIS)",
     company_name: "B3D Aps",
     icon: "https://b3d.dk/wp-content/uploads/2023/10/b3dlogos-vektor-17.svg",
     iconBg: "#E6DEDD",
-    date: "May 2023 - Present",
+    date: "April 2023 - August 2024",
     points: [
-      "Developed a cloud drone image processing software for 2d and 3d visualization",
-      "Implemented Major map frontend and backend components",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-      "Implementing high end restful apis, data base diagrams.",
+      "Developed APIs and interfaces for property management software, enabling building visualization, inspections, and digitization.",
+      "Built Python APIs and a React interface to visualize building drone data in 2D/3D, using ODM to automate raw image conversion into orthophotos , 3D models and point clouds , reducing processing time by 30%.",
+      "Built a Python raster tile engine to serve large GeoTIFFs, improving performance by 20% for faster data retrieval and a better user experience.",
+      "Created an inspection tool with Maplibre and Canvas 2D for annotating building components in drone images ,helping property owners plan repairs and cut costs by 4% through precise maintenance predictions.",
+    ],
+  },
+  {
+    title: "Senior GIS Developer",
+    company_name: "galli MAPS",
+    icon: "https://dashboard-init.gallimap.com/static/media/Galli_color.63d82588c9bb80c5d639.png",
+    iconBg: "#383E56",
+    date: "August 2022 - March 2023",
+    points: [
+      "Developed a mobile app “GalliMaps” for navigating Kathmandu V alley’s narrow streets, managing street data and aerial imagery.",
+      "Built a Python workflow to gather and store Kathmandu street data from OpenStreetMap and local sources in PostGIS , serving it via a custom basemap API with TileserverGL , processing 10K+ points daily for accurate navigation.",
+      "Developed a custom satellite basemap API for Kathmandu using data from Sentinel-2, utilizing Python, Rasterio and Flask.",
+      "Addressed inaccurate navigation problems in the market with GalliMaps, which won a National Product Award from the government.",
+    ],
+  },
+  {
+    title: "WebGIS Developer/Project Lead",
+    company_name: "Naxa",
+    icon: "https://naxa.com.np/ac468ef024692c042053c13a69625759.png",
+    iconBg: "#383E56",
+    date: "April 2020 - July 2022",
+    points: [
+      "Contributed to developing the “National Geoportal” mapping web app for Nepal ,which stores administrative vector and raster data for the country developed by Nepal government for public availability.",
+      "Used Geonode(Django/Geoserver) for storing data like shapefiles and rasters to serve different types of OGC standard rest api like WMS, WMTS, WFS etc.",
+      "Created APIs for user creation and management, social authentication, and payment integration.",
+      "Led development of the Provincial Climate Management System(PCCMIS) for the Nepal government, integrating georeferenced data (shapefiles, GeoJSON, NetCDF, images) served via GeoServer and PostGIS.",
+      "Implemented ER diagrams, system architecture, and design patterns for map visualization in the PCCMIS application, overseeing code reviews and testing to ensure adherence to coding standards.",
+    ],
+  },
+  {
+    title: "Python Developer",
+    company_name: "Resimator Oy",
+    icon: resimator_icon,
+    iconBg: "#E6DEDD",
+    date: "April 2019 - April 2020",
+    points: [
+      "Worked on one of the microservices of Izy AS.",
+      "Implemented Kiosk e-commerce.",
+      "Created Api in Python using Flask for e-commerce.",
     ],
   },
 ];
@@ -232,7 +220,7 @@ const projects = [
         color: "pink-text-gradient",
       },
       {
-        name: "geroserver",
+        name: "geoserver",
         color: "blue-text-gradient",
       },
       {
@@ -248,9 +236,9 @@ const projects = [
     source_code_link: "https://pccmis.karnali.gov.np/",
   },
   {
-    name: "Driftsense",
+    name: "Gallimaps",
     description:
-      "DriftSense has developed the first evidence-based prediction tool for growers, to know exactly when to make one of their most critical decisions: when to apply pesticide to each plot for optimal precision.",
+      "A mobile app for navigating Kathmandu Valley’s narrow streets, managing street data and aerial imagery. The app helps to navigate the narrow streets of Kathmandu valley",
     tags: [
       {
         name: "react",
@@ -261,24 +249,40 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "openlayers",
+        name: "Maplibre",
         color: "pink-text-gradient",
       },
       {
-        name: "geroserver",
+        name: "TileserverGL",
         color: "blue-text-gradient",
       },
       {
-        name: "postgres",
+        name: "postgis",
         color: "pink-text-gradient",
       },
       {
         name: "google-maps",
         color: "blue-text-gradient",
       },
+      {
+        name: "open-street-map",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "sentinel-2",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "flask",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "rasterio",
+        color: "blue-text-gradient",
+      },
     ],
-    image: driftsense,
-    source_code_link: "https://qa.drift-sense.com",
+    image: gallimaps,
+    source_code_link: "https://map.gallimap.com/",
   },
   {
     name: "Inovasi Agriplot",
@@ -341,6 +345,178 @@ const projects = [
     ],
     image: b3d,
     source_code_link: "https://b3d.dk/",
+  },
+
+  {
+    name: "Custom Raster Tile Engine",
+    description:
+      "Converts large GeoTIFFs or other raster files into map tiles for web-based applications. Uses GDAL and Rasterio to process and serve geospatial raster data quickly. Built on Flask, providing a simple and scalable API for requesting tiles based on location, zoom, and layer.",
+
+    tags: [
+      {
+        name: "flask",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "rasterio",
+        color: "green-text-gradient",
+      },
+      {
+        name: "geotiff",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "postgis",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "docker",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "cog",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: rastertileserver,
+    source_code_link: "https://github.com/anup39/b3d-rastertile-server",
+  },
+  {
+    name: "Titiler Non Mercator support",
+    description:
+      "By default Titiler only supports WebMercator projection. I added support for non WebMercator projection in Titiler for serving WMTS and WMS.",
+
+    tags: [
+      {
+        name: "fastapi",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "rasterio",
+        color: "green-text-gradient",
+      },
+      {
+        name: "geotiff",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "postgis",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "docker",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "cog",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "wms",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "wmts",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "epsg:25832",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "titiler",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: titiler,
+    source_code_link: "https://github.com/anup39/titiler_nonwebmercator",
+  },
+  {
+    name: "WebODM",
+    description:
+      "This is the customization of WebODM where we can drawing features on top of drone image and saving it , Printing the map , Serving WFS , Geojson of drawn layers . Vector tile serving of features drawn layers , Managing authentication",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "django",
+        color: "green-text-gradient",
+      },
+      {
+        name: "maplibre",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "postgis",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "docker",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "photogrammetry",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "3d-model",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "point-cloud",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: webodm,
+    source_code_link: "https://github.com/anup39/WebODM-with-annotations",
+  },
+  {
+    name: "KiCreate",
+    description:
+      "A web interface for visualizing solar information across Europe for specific areas of interest, built using React, Next.js, and MapLibre. This application allows users to interactively explore solar data and insights on a user-friendly map interface.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "nextjs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "maplibre",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "deckgl",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwind css",
+        color: "pink-text-gradient",
+      },
+
+      {
+        name: "geocoding",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "gis",
+        color: "green-text-gradient",
+      },
+      {
+        name: "solar",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "fastapi",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: kicreate,
+    source_code_link: "https://github.com/anup39/kicreatesolar",
   },
 ];
 
