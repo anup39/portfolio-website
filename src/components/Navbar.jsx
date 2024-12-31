@@ -45,10 +45,7 @@ const Navbar = () => {
           <img src={profile} alt="logo" className="w-9 h-9 object-contain" />
           <p className="text-white text-[18px] font-bold cursor-pointer flex ">
             Anup Dahal &nbsp;
-            <span className="sm:block hidden">
-              {" "}
-              | Full Stack Developer (Geospatial){" "}
-            </span>
+            <span className="sm:block hidden"> | Geospatial Developer</span>
           </p>
         </Link>
 
